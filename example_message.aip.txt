@@ -1,0 +1,42 @@
+{
+	"item-metadata":
+		[
+			{"rel":"urn:X-tsbiot:rels:isContentType","val":"application/vnd.tsbiot.assetalert+json"},
+			{"rel":"urn:X-tsbiot:rels:hasDescription:en","val":"Asset Alert from Galileo BMS Emulator."},
+			{"rel":"urn:X-tsbiot:rels:supportsSearch","val":"urn:X-tsbiot:search:simple"}
+		],
+	"items":
+		[
+			{
+				"site-ref":"@site","asset-id":"_DEMO_AHU_001","asset-type":"AHU",
+				"asset-details":
+					[
+						{"manufacturer":"Hyundai"},{"model":"HXY2367"},{"serial-number":"16942440"}
+					],
+				"asset-status":"NORMAL","href":"http://dev.xuvasi.com/asset/_DEMO_AHU_001",
+				"sensors":
+					[
+						{
+							"type":"zone_air_pressure_sensor","details":
+								[
+									{"value":"1092.00"},{"units":"Millibars"}
+								]
+						},
+						{
+							"type":"outside_air_damper","details":
+								[
+									{"value":"75.00"},{"units":"Percent"}
+								]
+						},
+						{
+							"type":"altitude","details":
+								[
+									{"value":"0"},{"units":"WGS-84"}
+								]
+						}
+					]
+			}
+		]
+}
+
+Check your JSON is valid at: http://json.parser.online.fr/
